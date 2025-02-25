@@ -1,0 +1,15 @@
+<section class="pt-16 max-w-screen-xl p-4 mx-auto">
+  <h1 class="sm:text-4xl text-3xl my-5 border-l-5 border-l-custom-orange-color pl-2 uppercase">Details of product</h1>
+  <!-- Card Of Product Details -->
+  <div class="grid grid-cols-1 sm:grid-cols-12 p-3 my-5 gap-5 shadow rounded-2xl bg-bg-color/20">
+    <div class="sm:col-span-6 md:col-span-5 lg:col-span-6 flex items-center">
+      <img [src]="product.image" class="w-full h-100 object-contain" [alt]="product.title">
+    </div>
+    <div class="sm:col-span-6 md:col-span-7 lg:col-span-6">
+      <h1 class="mb-2 font-bold text-main-color">{{ product.title }}</h1>
+      <h3 class="mb-3 font-normal text-second-color ">{{ product.category }}</h3>
+      <p class="mb-3 font-normal text-gray-500 text-justify">{{ product.description }}</p>
+      <p class="font-bold text-main-color">Price: <span class="font-extrabold text-main-color font-mono">{{ product.price }}$</span></p>
+    </div>
+  </div>
+</section>
