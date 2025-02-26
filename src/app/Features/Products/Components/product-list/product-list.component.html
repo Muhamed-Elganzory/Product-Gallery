@@ -1,4 +1,4 @@
-<section class="pt-16 max-w-screen-xl mx-auto p-4">
+<section class="relative pt-16 max-w-screen-xl mx-auto p-4">
   <article class="px-3 m-auto">
     <h1 class="sm:text-4xl text-3xl my-5 border-l-6 border-l-custom-orange-color text-main-color pl-2 uppercase font-mono">Popular Products</h1>
     <!-- Search Input -->
@@ -16,8 +16,20 @@
     <!-- List Of Products -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-8 my-5">
       @for(product of productsList | search: searchTerm; track product.id){
-        <app-product-card [product]="product"></app-product-card>
+        @defer (on idle){
+          <app-product-card [product]="product"></app-product-card>
+        }
       }
     </div>
   </article>
+  <!-- Button ( Go to top page. ) -->
+    @if(showBtnTop){
+      <button (click)="goTop()" type="button" class="shadow cursor-pointer fixed bottom-10 right-7 z-50 transition duration-700 text-main-color hover:text-white hover:bg-custom-orange-color bg-orange-100 font-semibold rounded-full p-2.5 inline-flex items-center">
+        <svg class="w-4 h-4 mx-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M7 12V2m0 0L3 6m4-4l4 4"/>
+        </svg>
+        <span class="sr-only">Icon description</span>
+      </button>
+    }
 </section>

@@ -2,9 +2,9 @@
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
 
 # 📌 Project Description
-**Product Gallery** is a simple project that shows products, It allows users to browse a collection of products with a search feature to filter items dynamically and allows to show product description
+**Product Gallery** is a simple angular project that shows products, It allows users to browse a collection of products with a search feature to filter items dynamically and allows to show product description
 
-# ⚙️ Running the Project Locally
+# ⚙️ Running Locally
 To start a local development server, run:
 
 ```bash

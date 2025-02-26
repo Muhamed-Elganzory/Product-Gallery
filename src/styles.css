@@ -2,12 +2,14 @@
 @import "tailwindcss";
 @source "../node_modules/flowbite";
 
+/**
+ * Global Custom Colors
+ * These variables define the custom color palette used throughout the application.
+ */
 @theme{
   --color-main-color: #0D4715;
   --color-second-color: #41644A;
   --color-custom-orange-color: #E9762B;
   --color-bg-color: #F1F0E9;
   --color-rating-color: #ffc908;
-  --shadow-main-shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
-  --font-main-font-family: "Encode Sans Expanded", sans-serif;
 }

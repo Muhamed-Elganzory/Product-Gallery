@@ -11,5 +11,9 @@ import {RouterLink} from '@angular/router';
   styleUrl: './product-card.component.css'
 })
 export class ProductCardComponent {
+
+  /**
+   * Input property to receive a product object from the parent component
+   */
   @Input() product!: Product;
 }

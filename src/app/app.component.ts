@@ -9,5 +9,4 @@ import {NgxSpinnerComponent} from 'ngx-spinner';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-}
+export class AppComponent { }
