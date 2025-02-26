@@ -13,4 +13,4 @@ ng serve --open
 Once the server is running, open your browser and navigate to `http://localhost:4200/#/product`. The application will automatically reload whenever you modify any of the source files.
 
 # 🚀 Live Demo
-🔗 [Live Demo](https://your-live-demo-link.com) 
+🔗 [Live Demo](https://product-gallery-two.vercel.app/#/product) 

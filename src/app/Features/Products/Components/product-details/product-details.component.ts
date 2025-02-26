@@ -15,7 +15,7 @@ export class ProductDetailsComponent implements OnInit {
   private readonly activatedRoute: ActivatedRoute = inject(ActivatedRoute);
 
   productID: number = 0;
-  product: Product = {} as Product;
+  product: Product = { rating: { rate: 0 } } as Product;
 
   /**
    * Fetches the product ID from the route parameters and then sends that ID to
